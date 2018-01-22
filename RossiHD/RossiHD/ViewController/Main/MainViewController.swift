@@ -30,6 +30,7 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.endEditing(true)
 //        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
 //            self.presentLoginViewController()
 //        }
