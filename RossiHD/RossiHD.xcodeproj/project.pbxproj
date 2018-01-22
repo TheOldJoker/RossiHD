@@ -1,0 +1,655 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AFE4542A2016039B004AA8FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE454292016039B004AA8FD /* AppDelegate.swift */; };
+		AFE4542F2016039B004AA8FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFE4542D2016039B004AA8FD /* Main.storyboard */; };
+		AFE454312016039B004AA8FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFE454302016039B004AA8FD /* Assets.xcassets */; };
+		AFE454342016039B004AA8FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFE454322016039B004AA8FD /* LaunchScreen.storyboard */; };
+		AFE4543F2016039B004AA8FD /* RossiHDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE4543E2016039B004AA8FD /* RossiHDTests.swift */; };
+		AFE4544A2016039B004AA8FD /* RossiHDUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE454492016039B004AA8FD /* RossiHDUITests.swift */; };
+		AFE4545E201603E8004AA8FD /* UIViewController+YHViewControllerCategroy.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE4545D201603E8004AA8FD /* UIViewController+YHViewControllerCategroy.m */; };
+		AFE4546020160499004AA8FD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE4545F20160499004AA8FD /* MainViewController.swift */; };
+		AFE45468201604F4004AA8FD /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE45465201604F4004AA8FD /* UIColor+Extension.swift */; };
+		AFE45469201604F4004AA8FD /* ViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE45466201604F4004AA8FD /* ViewController+Extension.swift */; };
+		AFE4546A201604F4004AA8FD /* button+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE45467201604F4004AA8FD /* button+Extension.swift */; };
+		AFE4546E2016050D004AA8FD /* LoginSelectButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE4546C2016050C004AA8FD /* LoginSelectButton.swift */; };
+		AFE4546F2016050D004AA8FD /* LoginTextFieldBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE4546D2016050D004AA8FD /* LoginTextFieldBackgroundView.swift */; };
+		AFE454722016051B004AA8FD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE454702016051A004AA8FD /* LoginViewController.swift */; };
+		AFE454732016051B004AA8FD /* login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFE454712016051B004AA8FD /* login.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AFE4543B2016039B004AA8FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFE4541E2016039B004AA8FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFE454252016039B004AA8FD;
+			remoteInfo = RossiHD;
+		};
+		AFE454462016039B004AA8FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFE4541E2016039B004AA8FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFE454252016039B004AA8FD;
+			remoteInfo = RossiHD;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AFE454262016039B004AA8FD /* RossiHD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RossiHD.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFE454292016039B004AA8FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AFE4542E2016039B004AA8FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AFE454302016039B004AA8FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AFE454332016039B004AA8FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AFE454352016039B004AA8FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFE4543A2016039B004AA8FD /* RossiHDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RossiHDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFE4543E2016039B004AA8FD /* RossiHDTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RossiHDTests.swift; sourceTree = "<group>"; };
+		AFE454402016039B004AA8FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFE454452016039B004AA8FD /* RossiHDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RossiHDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFE454492016039B004AA8FD /* RossiHDUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RossiHDUITests.swift; sourceTree = "<group>"; };
+		AFE4544B2016039B004AA8FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFE45457201603AF004AA8FD /* RossiHD-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RossiHD-Bridging-Header.h"; sourceTree = "<group>"; };
+		AFE4545C201603E8004AA8FD /* UIViewController+YHViewControllerCategroy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+YHViewControllerCategroy.h"; sourceTree = "<group>"; };
+		AFE4545D201603E8004AA8FD /* UIViewController+YHViewControllerCategroy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+YHViewControllerCategroy.m"; sourceTree = "<group>"; };
+		AFE4545F20160499004AA8FD /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		AFE45465201604F4004AA8FD /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		AFE45466201604F4004AA8FD /* ViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+Extension.swift"; sourceTree = "<group>"; };
+		AFE45467201604F4004AA8FD /* button+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "button+Extension.swift"; sourceTree = "<group>"; };
+		AFE4546C2016050C004AA8FD /* LoginSelectButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginSelectButton.swift; sourceTree = "<group>"; };
+		AFE4546D2016050D004AA8FD /* LoginTextFieldBackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginTextFieldBackgroundView.swift; sourceTree = "<group>"; };
+		AFE454702016051A004AA8FD /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		AFE454712016051B004AA8FD /* login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = login.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AFE454232016039B004AA8FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFE454372016039B004AA8FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFE454422016039B004AA8FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AFE4541D2016039B004AA8FD = {
+			isa = PBXGroup;
+			children = (
+				AFE454282016039B004AA8FD /* RossiHD */,
+				AFE4543D2016039B004AA8FD /* RossiHDTests */,
+				AFE454482016039B004AA8FD /* RossiHDUITests */,
+				AFE454272016039B004AA8FD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AFE454272016039B004AA8FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AFE454262016039B004AA8FD /* RossiHD.app */,
+				AFE4543A2016039B004AA8FD /* RossiHDTests.xctest */,
+				AFE454452016039B004AA8FD /* RossiHDUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AFE454282016039B004AA8FD /* RossiHD */ = {
+			isa = PBXGroup;
+			children = (
+				AFE45464201604E2004AA8FD /* Extension */,
+				AFE4546B201604FA004AA8FD /* View */,
+				AFE45461201604AC004AA8FD /* ViewController */,
+				AFE4545B201603E8004AA8FD /* OCExtension */,
+				AFE454292016039B004AA8FD /* AppDelegate.swift */,
+				AFE454302016039B004AA8FD /* Assets.xcassets */,
+				AFE454322016039B004AA8FD /* LaunchScreen.storyboard */,
+				AFE454352016039B004AA8FD /* Info.plist */,
+				AFE45457201603AF004AA8FD /* RossiHD-Bridging-Header.h */,
+			);
+			path = RossiHD;
+			sourceTree = "<group>";
+		};
+		AFE4543D2016039B004AA8FD /* RossiHDTests */ = {
+			isa = PBXGroup;
+			children = (
+				AFE4543E2016039B004AA8FD /* RossiHDTests.swift */,
+				AFE454402016039B004AA8FD /* Info.plist */,
+			);
+			path = RossiHDTests;
+			sourceTree = "<group>";
+		};
+		AFE454482016039B004AA8FD /* RossiHDUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AFE454492016039B004AA8FD /* RossiHDUITests.swift */,
+				AFE4544B2016039B004AA8FD /* Info.plist */,
+			);
+			path = RossiHDUITests;
+			sourceTree = "<group>";
+		};
+		AFE4545B201603E8004AA8FD /* OCExtension */ = {
+			isa = PBXGroup;
+			children = (
+				AFE4545C201603E8004AA8FD /* UIViewController+YHViewControllerCategroy.h */,
+				AFE4545D201603E8004AA8FD /* UIViewController+YHViewControllerCategroy.m */,
+			);
+			path = OCExtension;
+			sourceTree = "<group>";
+		};
+		AFE45461201604AC004AA8FD /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AFE45463201604C3004AA8FD /* Login */,
+				AFE45462201604B8004AA8FD /* Main */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		AFE45462201604B8004AA8FD /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				AFE4545F20160499004AA8FD /* MainViewController.swift */,
+				AFE4542D2016039B004AA8FD /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		AFE45463201604C3004AA8FD /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				AFE454702016051A004AA8FD /* LoginViewController.swift */,
+				AFE454712016051B004AA8FD /* login.storyboard */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		AFE45464201604E2004AA8FD /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				AFE45466201604F4004AA8FD /* ViewController+Extension.swift */,
+				AFE45467201604F4004AA8FD /* button+Extension.swift */,
+				AFE45465201604F4004AA8FD /* UIColor+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		AFE4546B201604FA004AA8FD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AFE4546C2016050C004AA8FD /* LoginSelectButton.swift */,
+				AFE4546D2016050D004AA8FD /* LoginTextFieldBackgroundView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AFE454252016039B004AA8FD /* RossiHD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFE4544E2016039B004AA8FD /* Build configuration list for PBXNativeTarget "RossiHD" */;
+			buildPhases = (
+				AFE454222016039B004AA8FD /* Sources */,
+				AFE454232016039B004AA8FD /* Frameworks */,
+				AFE454242016039B004AA8FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RossiHD;
+			productName = RossiHD;
+			productReference = AFE454262016039B004AA8FD /* RossiHD.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AFE454392016039B004AA8FD /* RossiHDTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFE454512016039B004AA8FD /* Build configuration list for PBXNativeTarget "RossiHDTests" */;
+			buildPhases = (
+				AFE454362016039B004AA8FD /* Sources */,
+				AFE454372016039B004AA8FD /* Frameworks */,
+				AFE454382016039B004AA8FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFE4543C2016039B004AA8FD /* PBXTargetDependency */,
+			);
+			name = RossiHDTests;
+			productName = RossiHDTests;
+			productReference = AFE4543A2016039B004AA8FD /* RossiHDTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AFE454442016039B004AA8FD /* RossiHDUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFE454542016039B004AA8FD /* Build configuration list for PBXNativeTarget "RossiHDUITests" */;
+			buildPhases = (
+				AFE454412016039B004AA8FD /* Sources */,
+				AFE454422016039B004AA8FD /* Frameworks */,
+				AFE454432016039B004AA8FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFE454472016039B004AA8FD /* PBXTargetDependency */,
+			);
+			name = RossiHDUITests;
+			productName = RossiHDUITests;
+			productReference = AFE454452016039B004AA8FD /* RossiHDUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AFE4541E2016039B004AA8FD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = zhaoyihuan;
+				TargetAttributes = {
+					AFE454252016039B004AA8FD = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
+					AFE454392016039B004AA8FD = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AFE454252016039B004AA8FD;
+					};
+					AFE454442016039B004AA8FD = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AFE454252016039B004AA8FD;
+					};
+				};
+			};
+			buildConfigurationList = AFE454212016039B004AA8FD /* Build configuration list for PBXProject "RossiHD" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AFE4541D2016039B004AA8FD;
+			productRefGroup = AFE454272016039B004AA8FD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AFE454252016039B004AA8FD /* RossiHD */,
+				AFE454392016039B004AA8FD /* RossiHDTests */,
+				AFE454442016039B004AA8FD /* RossiHDUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AFE454242016039B004AA8FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFE454732016051B004AA8FD /* login.storyboard in Resources */,
+				AFE454342016039B004AA8FD /* LaunchScreen.storyboard in Resources */,
+				AFE454312016039B004AA8FD /* Assets.xcassets in Resources */,
+				AFE4542F2016039B004AA8FD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFE454382016039B004AA8FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFE454432016039B004AA8FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AFE454222016039B004AA8FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFE454722016051B004AA8FD /* LoginViewController.swift in Sources */,
+				AFE4546020160499004AA8FD /* MainViewController.swift in Sources */,
+				AFE4545E201603E8004AA8FD /* UIViewController+YHViewControllerCategroy.m in Sources */,
+				AFE4546F2016050D004AA8FD /* LoginTextFieldBackgroundView.swift in Sources */,
+				AFE4542A2016039B004AA8FD /* AppDelegate.swift in Sources */,
+				AFE4546E2016050D004AA8FD /* LoginSelectButton.swift in Sources */,
+				AFE45469201604F4004AA8FD /* ViewController+Extension.swift in Sources */,
+				AFE45468201604F4004AA8FD /* UIColor+Extension.swift in Sources */,
+				AFE4546A201604F4004AA8FD /* button+Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFE454362016039B004AA8FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFE4543F2016039B004AA8FD /* RossiHDTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFE454412016039B004AA8FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFE4544A2016039B004AA8FD /* RossiHDUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AFE4543C2016039B004AA8FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFE454252016039B004AA8FD /* RossiHD */;
+			targetProxy = AFE4543B2016039B004AA8FD /* PBXContainerItemProxy */;
+		};
+		AFE454472016039B004AA8FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFE454252016039B004AA8FD /* RossiHD */;
+			targetProxy = AFE454462016039B004AA8FD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AFE4542D2016039B004AA8FD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AFE4542E2016039B004AA8FD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AFE454322016039B004AA8FD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AFE454332016039B004AA8FD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AFE4544C2016039B004AA8FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AFE4544D2016039B004AA8FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AFE4544F2016039B004AA8FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WH25XMTWX7;
+				INFOPLIST_FILE = RossiHD/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhaoyihuan.RossiHD;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RossiHD/RossiHD-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		AFE454502016039B004AA8FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WH25XMTWX7;
+				INFOPLIST_FILE = RossiHD/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhaoyihuan.RossiHD;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RossiHD/RossiHD-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		AFE454522016039B004AA8FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WH25XMTWX7;
+				INFOPLIST_FILE = RossiHDTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhaoyihuan.RossiHDTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RossiHD.app/RossiHD";
+			};
+			name = Debug;
+		};
+		AFE454532016039B004AA8FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WH25XMTWX7;
+				INFOPLIST_FILE = RossiHDTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhaoyihuan.RossiHDTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RossiHD.app/RossiHD";
+			};
+			name = Release;
+		};
+		AFE454552016039B004AA8FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WH25XMTWX7;
+				INFOPLIST_FILE = RossiHDUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhaoyihuan.RossiHDUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RossiHD;
+			};
+			name = Debug;
+		};
+		AFE454562016039B004AA8FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WH25XMTWX7;
+				INFOPLIST_FILE = RossiHDUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhaoyihuan.RossiHDUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RossiHD;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AFE454212016039B004AA8FD /* Build configuration list for PBXProject "RossiHD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFE4544C2016039B004AA8FD /* Debug */,
+				AFE4544D2016039B004AA8FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFE4544E2016039B004AA8FD /* Build configuration list for PBXNativeTarget "RossiHD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFE4544F2016039B004AA8FD /* Debug */,
+				AFE454502016039B004AA8FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFE454512016039B004AA8FD /* Build configuration list for PBXNativeTarget "RossiHDTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFE454522016039B004AA8FD /* Debug */,
+				AFE454532016039B004AA8FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFE454542016039B004AA8FD /* Build configuration list for PBXNativeTarget "RossiHDUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFE454552016039B004AA8FD /* Debug */,
+				AFE454562016039B004AA8FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AFE4541E2016039B004AA8FD /* Project object */;
+}
