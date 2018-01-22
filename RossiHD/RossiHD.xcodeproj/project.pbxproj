@@ -22,6 +22,7 @@
 		AFE4546F2016050D004AA8FD /* LoginTextFieldBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE4546D2016050D004AA8FD /* LoginTextFieldBackgroundView.swift */; };
 		AFE454722016051B004AA8FD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE454702016051A004AA8FD /* LoginViewController.swift */; };
 		AFE454732016051B004AA8FD /* login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFE454712016051B004AA8FD /* login.storyboard */; };
+		AFE454752016161B004AA8FD /* MainCustomerCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE454742016161B004AA8FD /* MainCustomerCardTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		AFE4546D2016050D004AA8FD /* LoginTextFieldBackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginTextFieldBackgroundView.swift; sourceTree = "<group>"; };
 		AFE454702016051A004AA8FD /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		AFE454712016051B004AA8FD /* login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = login.storyboard; sourceTree = "<group>"; };
+		AFE454742016161B004AA8FD /* MainCustomerCardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCustomerCardTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +169,7 @@
 		AFE45462201604B8004AA8FD /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				AFE454742016161B004AA8FD /* MainCustomerCardTableViewCell.swift */,
 				AFE4545F20160499004AA8FD /* MainViewController.swift */,
 				AFE4542D2016039B004AA8FD /* Main.storyboard */,
 			);
@@ -341,6 +344,7 @@
 				AFE4546020160499004AA8FD /* MainViewController.swift in Sources */,
 				AFE4545E201603E8004AA8FD /* UIViewController+YHViewControllerCategroy.m in Sources */,
 				AFE4546F2016050D004AA8FD /* LoginTextFieldBackgroundView.swift in Sources */,
+				AFE454752016161B004AA8FD /* MainCustomerCardTableViewCell.swift in Sources */,
 				AFE4542A2016039B004AA8FD /* AppDelegate.swift in Sources */,
 				AFE4546E2016050D004AA8FD /* LoginSelectButton.swift in Sources */,
 				AFE45469201604F4004AA8FD /* ViewController+Extension.swift in Sources */,

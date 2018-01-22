@@ -9,12 +9,15 @@
 import UIKit
 
 class MainViewController: UIViewController {
+    @IBOutlet var mainTableView: UITableView!
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
     }
-    //MARK - Action
+    // MARK: - Action
     
+    @IBAction func addNewCustomerAction(_ sender: UIButton) {
+    }
     @IBAction func WorkorderAction(_ sender: UIButton) {
     }
     @IBAction func POSAciton(_ sender: UIButton) {
@@ -31,6 +34,7 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.endEditing(true)
+        self.mainTableView.tableFooterView = UIView.init()
 //        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
 //            self.presentLoginViewController()
 //        }
@@ -46,6 +50,7 @@ class MainViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    // MARK: - Extension
 
     /*
     // MARK: - Navigation
@@ -57,4 +62,19 @@ class MainViewController: UIViewController {
     }
     */
 
+}
+extension MainViewController : UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 20
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MAIN_CUSTOMER_CELL", for: indexPath) as! MainCustomerCardTableViewCell
+        return cell;
+    }
+}
+extension MainViewController : UITableViewDelegate{
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return CGFloat(114)
+    }
 }
