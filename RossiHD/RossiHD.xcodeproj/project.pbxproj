@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF62AB2B2016C3EB00FF8857 /* OderSetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF62AB2A2016C3EB00FF8857 /* OderSetsViewController.swift */; };
+		AF62AB2D2016C46100FF8857 /* MainUserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF62AB2C2016C46100FF8857 /* MainUserInfoView.swift */; };
+		AF62AB2F2016CAD800FF8857 /* MainOderSetsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF62AB2E2016CAD800FF8857 /* MainOderSetsTableViewCell.swift */; };
 		AFE4542A2016039B004AA8FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE454292016039B004AA8FD /* AppDelegate.swift */; };
 		AFE4542F2016039B004AA8FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFE4542D2016039B004AA8FD /* Main.storyboard */; };
 		AFE454312016039B004AA8FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFE454302016039B004AA8FD /* Assets.xcassets */; };
@@ -43,6 +46,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AF62AB2A2016C3EB00FF8857 /* OderSetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OderSetsViewController.swift; sourceTree = "<group>"; };
+		AF62AB2C2016C46100FF8857 /* MainUserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainUserInfoView.swift; sourceTree = "<group>"; };
+		AF62AB2E2016CAD800FF8857 /* MainOderSetsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainOderSetsTableViewCell.swift; sourceTree = "<group>"; };
 		AFE454262016039B004AA8FD /* RossiHD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RossiHD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFE454292016039B004AA8FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFE4542E2016039B004AA8FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -170,7 +176,10 @@
 			isa = PBXGroup;
 			children = (
 				AFE454742016161B004AA8FD /* MainCustomerCardTableViewCell.swift */,
+				AF62AB2E2016CAD800FF8857 /* MainOderSetsTableViewCell.swift */,
+				AF62AB2C2016C46100FF8857 /* MainUserInfoView.swift */,
 				AFE4545F20160499004AA8FD /* MainViewController.swift */,
+				AF62AB2A2016C3EB00FF8857 /* OderSetsViewController.swift */,
 				AFE4542D2016039B004AA8FD /* Main.storyboard */,
 			);
 			path = Main;
@@ -345,11 +354,14 @@
 				AFE4545E201603E8004AA8FD /* UIViewController+YHViewControllerCategroy.m in Sources */,
 				AFE4546F2016050D004AA8FD /* LoginTextFieldBackgroundView.swift in Sources */,
 				AFE454752016161B004AA8FD /* MainCustomerCardTableViewCell.swift in Sources */,
+				AF62AB2F2016CAD800FF8857 /* MainOderSetsTableViewCell.swift in Sources */,
 				AFE4542A2016039B004AA8FD /* AppDelegate.swift in Sources */,
 				AFE4546E2016050D004AA8FD /* LoginSelectButton.swift in Sources */,
 				AFE45469201604F4004AA8FD /* ViewController+Extension.swift in Sources */,
+				AF62AB2D2016C46100FF8857 /* MainUserInfoView.swift in Sources */,
 				AFE45468201604F4004AA8FD /* UIColor+Extension.swift in Sources */,
 				AFE4546A201604F4004AA8FD /* button+Extension.swift in Sources */,
+				AF62AB2B2016C3EB00FF8857 /* OderSetsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -16,6 +16,14 @@ class MainViewController: UIViewController {
     }
     // MARK: - Action
     
+    @IBAction func EditWorkorderAction(_ sender: UIButton) {
+    }
+    @IBAction func DeleteAction(_ sender: UIButton) {
+    }
+    @IBAction func AmendAction(_ sender: UIButton) {
+    }
+    @IBAction func AddToInVoiceAction(_ sender: UIButton) {
+    }
     @IBAction func addNewCustomerAction(_ sender: UIButton) {
     }
     @IBAction func WorkorderAction(_ sender: UIButton) {
@@ -35,9 +43,9 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         self.view.endEditing(true)
         self.mainTableView.tableFooterView = UIView.init()
-//        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-//            self.presentLoginViewController()
-//        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            self.presentLoginViewController()
+        }
         
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
