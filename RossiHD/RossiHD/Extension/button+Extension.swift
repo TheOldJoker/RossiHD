@@ -33,4 +33,12 @@ extension UIButton
         }
         self.backgroundColor = UIColor.RGBA(r: 1, g: 1, b: 1, a: 0.13)
     }
+    class func initWithTitle(_ title:String, titleColor:UIColor, frame:CGRect, backgroundColor:UIColor, font:UIFont) -> UIButton{
+        let button = UIButton.init(frame: frame)
+        button.setTitle(title, for: UIControlState.normal)
+        button.backgroundColor = backgroundColor
+        button.titleLabel?.font = font
+        button.setTitleColor(titleColor, for: UIControlState.normal)
+        return button
+    }
 }

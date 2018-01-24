@@ -15,21 +15,21 @@
 #import <objc/runtime.h>
 #import <objc/message.h>
 #endif
-//@interface UIViewController (YHAssociated)
-//@property (nonatomic, strong) YHModaAnimationManager * modaAnimationManager;
-//@end
-//@implementation UIViewController (YHAssociated)
-//- (void)setModaAnimationManager:(YHModaAnimationManager *)modaManager
-//{
-//    // 设置关联对象
-//    objc_setAssociatedObject(self, @selector(modaAnimationManager), modaManager, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-//}
-//- (YHModaAnimationManager *)modaAnimationManager
-//{
-//    // 得到关联对象
-//    return objc_getAssociatedObject(self, @selector(modaAnimationManager));
-//}
-//@end
+@interface UIViewController (YHAssociated)
+@property (nonatomic, strong) YHModaAnimationManager * modaAnimationManager;
+@end
+@implementation UIViewController (YHAssociated)
+- (void)setModaAnimationManager:(YHModaAnimationManager *)modaManager
+{
+    // 设置关联对象
+    objc_setAssociatedObject(self, @selector(modaAnimationManager), modaManager, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+- (YHModaAnimationManager *)modaAnimationManager
+{
+    // 得到关联对象
+    return objc_getAssociatedObject(self, @selector(modaAnimationManager));
+}
+@end
 @implementation UIViewController (YHViewControllerCategroy)
 - (void)showSystemAlertTitle:(NSString *)title message:(NSString *)message actionTitleArray:(NSArray *)actionArray colorTitle:(NSArray *)colorTitleArray withAction:(AlertActionBlock)alertAction preferredStyle:(UIAlertControllerStyle)preferredStyle
 {
@@ -68,13 +68,13 @@
 //    alertVC.modalPresentationStyle = UIModalPresentationCustom;
 //    [self presentViewController:alertVC animated:YES completion:nil];    
 //}
-//- (void)customPresentVC:(UIViewController *)vc animation:(YHModaAnimationType)animation showBlackBackgroud:(BOOL)showBlackBackgroud canTapDismiss:(BOOL)canTapDismiss
-//{
-//    self.modaAnimationManager = [[YHModaAnimationManager alloc] initWithModaAnimationType:animation showBlackBackgroud:showBlackBackgroud canTapDismiss:canTapDismiss];
-//    vc.transitioningDelegate = self.modaAnimationManager;
-//    vc.modalPresentationStyle = UIModalPresentationCustom;
-//    [self presentViewController:vc animated:YES completion:nil];
-//}
+- (void)customPresentVC:(UIViewController *)vc animation:(YHModaAnimationType)animation showBlackBackgroud:(BOOL)showBlackBackgroud canTapDismiss:(BOOL)canTapDismiss
+{
+    self.modaAnimationManager = [[YHModaAnimationManager alloc] initWithModaAnimationType:animation showBlackBackgroud:showBlackBackgroud canTapDismiss:canTapDismiss];
+    vc.transitioningDelegate = self.modaAnimationManager;
+    vc.modalPresentationStyle = UIModalPresentationCustom;
+    [self presentViewController:vc animated:YES completion:nil];
+}
 //- (void)showAttributedStringAlertTitle:(NSAttributedString *)title message:(NSAttributedString *)message actionTitleArray:(NSArray *)actionArray withAction:(AlertActionBlock)alertAction preferredStyle:(UIAlertControllerStyle)preferredStyle
 //{
 //    UIAlertController * alertController = [UIAlertController alertControllerWithTitle:title.string message:message.string preferredStyle:preferredStyle];

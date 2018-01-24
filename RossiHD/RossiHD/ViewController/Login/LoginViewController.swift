@@ -46,6 +46,7 @@ class LoginViewController: UIViewController {
     }
     @IBAction func loginApp(_ sender: UIButton) {
         sender.setButtonCanClicked(can: false)
+        view.endEditing(true)
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             self.dismiss(animated: true, completion: {
                 

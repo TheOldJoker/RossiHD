@@ -25,6 +25,8 @@ class MainViewController: UIViewController {
     @IBAction func AddToInVoiceAction(_ sender: UIButton) {
     }
     @IBAction func addNewCustomerAction(_ sender: UIButton) {
+        let vc = CustomerSelectListViewController.init()
+        self.customPresentVC(vc, animation: YHModaAnimationType.alpha, showBlackBackgroud: true, canTapDismiss: false)
     }
     @IBAction func WorkorderAction(_ sender: UIButton) {
     }
@@ -43,10 +45,15 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         self.view.endEditing(true)
         self.mainTableView.tableFooterView = UIView.init()
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-            self.presentLoginViewController()
-        }
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+//            self.presentLoginViewController()
+//        }
         
+    }
+    
+    func showAddCustomer() -> Void {
+        let vc = AddCustomerViewController.init()
+        self.customPresentVC(vc, animation: YHModaAnimationType.alpha, showBlackBackgroud: true, canTapDismiss: false)
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
 //        self.showSystemAlertTitle("提示", message: "正在操作", actionTitleArray: ["yes","no"], colorTitle: nil, withAction: { (i) in

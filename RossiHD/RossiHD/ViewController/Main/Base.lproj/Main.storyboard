@@ -136,7 +136,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="addNewCustomerAction:" destination="imT-DR-Fcw" eventType="touchUpInside" id="YW7-yK-S2r"/>
+                                    <action selector="addNewCustomerAction:" destination="imT-DR-Fcw" eventType="touchUpInside" id="jTI-mk-mKT"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OfF-ca-4xb">
@@ -379,7 +379,6 @@
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="EditWorkorderAction:" destination="imT-DR-Fcw" eventType="touchUpInside" id="9ex-Vg-HyA"/>
-                                            <action selector="addNewCustomerAction:" destination="imT-DR-Fcw" eventType="touchUpInside" id="F8E-ih-uaV"/>
                                         </connections>
                                     </button>
                                 </subviews>
