@@ -45,9 +45,9 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         self.view.endEditing(true)
         self.mainTableView.tableFooterView = UIView.init()
-//        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-//            self.presentLoginViewController()
-//        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            self.presentLoginViewController()
+        }
         
     }
     

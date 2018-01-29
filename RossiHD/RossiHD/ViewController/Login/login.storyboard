@@ -77,13 +77,25 @@
                                             <action selector="LoginSelectButtonClicked:" destination="4kI-Cr-O2n" eventType="touchUpInside" id="bm8-jB-m4a"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eTW-gz-aic">
+                                        <rect key="frame" x="8" y="12.5" width="166" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="9rp-lV-RBD"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="220" id="0eF-am-h4m"/>
+                                    <constraint firstItem="eTW-gz-aic" firstAttribute="centerY" secondItem="RY4-ox-eoT" secondAttribute="centerY" id="8dD-eP-hPG"/>
                                     <constraint firstAttribute="height" constant="44" id="Kdg-4O-tdR"/>
                                     <constraint firstAttribute="trailing" secondItem="RY4-ox-eoT" secondAttribute="trailing" constant="8" id="Mss-yw-kRg"/>
+                                    <constraint firstItem="RY4-ox-eoT" firstAttribute="leading" secondItem="eTW-gz-aic" secondAttribute="trailing" constant="8" id="d0d-Ws-e1f"/>
                                     <constraint firstItem="RY4-ox-eoT" firstAttribute="centerY" secondItem="f2s-n9-YK5" secondAttribute="centerY" id="jrS-ze-Fl5"/>
+                                    <constraint firstItem="eTW-gz-aic" firstAttribute="leading" secondItem="f2s-n9-YK5" secondAttribute="leading" constant="8" id="pnx-mE-gna"/>
                                 </constraints>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_logo" translatesAutoresizingMaskIntoConstraints="NO" id="wbZ-ck-yhs">
@@ -135,7 +147,9 @@
                         <outlet property="loginButton" destination="GmQ-oE-0ya" id="Hem-cN-PWS"/>
                         <outlet property="passWordCenterY" destination="TMv-Za-QOz" id="A9g-wB-yVc"/>
                         <outlet property="passwordTextField" destination="bB0-bx-Uft" id="v6V-Xj-UBC"/>
+                        <outlet property="selectBackgroudView" destination="f2s-n9-YK5" id="lLh-Z7-42S"/>
                         <outlet property="selectButton" destination="RY4-ox-eoT" id="fjP-pp-uCW"/>
+                        <outlet property="selectResLabel" destination="eTW-gz-aic" id="g8Y-HW-Dve"/>
                         <outlet property="usernameTextField" destination="uBe-oe-f9n" id="61S-gd-oRZ"/>
                     </connections>
                 </viewController>

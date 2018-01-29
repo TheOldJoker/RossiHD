@@ -12,6 +12,8 @@ class LoginViewController: UIViewController {
     @IBOutlet var usernameTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     @IBOutlet var loginButton: UIButton!
+    @IBOutlet var selectResLabel: UILabel!
+    @IBOutlet var selectBackgroudView: LoginTextFieldBackgroundView!
     
     @IBOutlet var selectButton: LoginSelectButton!
     @IBOutlet var passWordCenterY: NSLayoutConstraint!
@@ -57,6 +59,10 @@ class LoginViewController: UIViewController {
         self.view.endEditing(true)
         sender.isSelected = !sender.isSelected
         sender.showSelectTrigonLayer(show: sender.isSelected)
+        
+        let loginSelectViewController = LoginSelectViewController.init()
+        loginSelectViewController.view.frame = CGRect.init(x: (SCREEN_WIDTH - self.selectBackgroudView.frame.size.width) / 2, y: self.selectBackgroudView.frame.origin.y + self.selectBackgroudView.frame.size.height, width: self.selectBackgroudView.frame.size.width, height: self.selectBackgroudView.frame.size.width)
+        self.customPresentVC(loginSelectViewController, animation: YHModaAnimationType.alpha, showBlackBackgroud: false, canTapDismiss: true)
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

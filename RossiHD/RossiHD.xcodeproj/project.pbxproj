@@ -18,6 +18,7 @@
 		AF94111C20182A73001F7212 /* CustomerSelectListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF94111B20182A73001F7212 /* CustomerSelectListViewController.swift */; };
 		AF94112020185DF3001F7212 /* YHGlobalFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF94111F20185DF2001F7212 /* YHGlobalFunc.swift */; };
 		AF94112220186385001F7212 /* AddCustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF94112120186385001F7212 /* AddCustomerViewController.swift */; };
+		AFC6F2D4201ECA600050E6B4 /* LoginSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC6F2D3201ECA600050E6B4 /* LoginSelectViewController.swift */; };
 		AFE4542A2016039B004AA8FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE454292016039B004AA8FD /* AppDelegate.swift */; };
 		AFE4542F2016039B004AA8FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFE4542D2016039B004AA8FD /* Main.storyboard */; };
 		AFE454312016039B004AA8FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFE454302016039B004AA8FD /* Assets.xcassets */; };
@@ -69,6 +70,7 @@
 		AF94111B20182A73001F7212 /* CustomerSelectListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerSelectListViewController.swift; sourceTree = "<group>"; };
 		AF94111F20185DF2001F7212 /* YHGlobalFunc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YHGlobalFunc.swift; sourceTree = "<group>"; };
 		AF94112120186385001F7212 /* AddCustomerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCustomerViewController.swift; sourceTree = "<group>"; };
+		AFC6F2D3201ECA600050E6B4 /* LoginSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSelectViewController.swift; sourceTree = "<group>"; };
 		AFE454262016039B004AA8FD /* RossiHD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RossiHD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFE454292016039B004AA8FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFE4542E2016039B004AA8FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -236,6 +238,7 @@
 		AFE45463201604C3004AA8FD /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				AFC6F2D3201ECA600050E6B4 /* LoginSelectViewController.swift */,
 				AFE454702016051A004AA8FD /* LoginViewController.swift */,
 				AFE454712016051B004AA8FD /* login.storyboard */,
 			);
@@ -399,6 +402,7 @@
 			files = (
 				AF94111620182782001F7212 /* YHModaAnimationManager.m in Sources */,
 				AFE454722016051B004AA8FD /* LoginViewController.swift in Sources */,
+				AFC6F2D4201ECA600050E6B4 /* LoginSelectViewController.swift in Sources */,
 				AF9411192018286B001F7212 /* GlobalConfig.swift in Sources */,
 				AFE4546020160499004AA8FD /* MainViewController.swift in Sources */,
 				AFE4545E201603E8004AA8FD /* UIViewController+YHViewControllerCategroy.m in Sources */,
