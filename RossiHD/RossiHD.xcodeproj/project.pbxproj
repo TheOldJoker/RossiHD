@@ -10,6 +10,7 @@
 		AF62AB2B2016C3EB00FF8857 /* OderSetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF62AB2A2016C3EB00FF8857 /* OderSetsViewController.swift */; };
 		AF62AB2D2016C46100FF8857 /* MainUserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF62AB2C2016C46100FF8857 /* MainUserInfoView.swift */; };
 		AF62AB2F2016CAD800FF8857 /* MainOderSetsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF62AB2E2016CAD800FF8857 /* MainOderSetsTableViewCell.swift */; };
+		AF82413920230ADE00C6F92E /* RootTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF82413820230ADE00C6F92E /* RootTabBarViewController.swift */; };
 		AF94111420182782001F7212 /* YHAnimationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AF94110D20182782001F7212 /* YHAnimationManager.m */; };
 		AF94111520182782001F7212 /* YHCAAimationModalTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = AF94110F20182782001F7212 /* YHCAAimationModalTransition.m */; };
 		AF94111620182782001F7212 /* YHModaAnimationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AF94111120182782001F7212 /* YHModaAnimationManager.m */; };
@@ -58,6 +59,7 @@
 		AF62AB2A2016C3EB00FF8857 /* OderSetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OderSetsViewController.swift; sourceTree = "<group>"; };
 		AF62AB2C2016C46100FF8857 /* MainUserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainUserInfoView.swift; sourceTree = "<group>"; };
 		AF62AB2E2016CAD800FF8857 /* MainOderSetsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainOderSetsTableViewCell.swift; sourceTree = "<group>"; };
+		AF82413820230ADE00C6F92E /* RootTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarViewController.swift; sourceTree = "<group>"; };
 		AF94110C20182782001F7212 /* YHAnimationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHAnimationManager.h; sourceTree = "<group>"; };
 		AF94110D20182782001F7212 /* YHAnimationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHAnimationManager.m; sourceTree = "<group>"; };
 		AF94110E20182782001F7212 /* YHCAAimationModalTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHCAAimationModalTransition.h; sourceTree = "<group>"; };
@@ -122,6 +124,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AF82413720230AA600C6F92E /* RootTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				AF82413820230ADE00C6F92E /* RootTabBarViewController.swift */,
+			);
+			path = RootTabBar;
+			sourceTree = "<group>";
+		};
 		AF94110B20182782001F7212 /* YHModaTransitonHelper */ = {
 			isa = PBXGroup;
 			children = (
@@ -215,6 +225,7 @@
 		AFE45461201604AC004AA8FD /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				AF82413720230AA600C6F92E /* RootTabBar */,
 				AF94111A20182A23001F7212 /* ModalList */,
 				AFE45463201604C3004AA8FD /* Login */,
 				AFE45462201604B8004AA8FD /* Main */,
@@ -402,6 +413,7 @@
 			files = (
 				AF94111620182782001F7212 /* YHModaAnimationManager.m in Sources */,
 				AFE454722016051B004AA8FD /* LoginViewController.swift in Sources */,
+				AF82413920230ADE00C6F92E /* RootTabBarViewController.swift in Sources */,
 				AFC6F2D4201ECA600050E6B4 /* LoginSelectViewController.swift in Sources */,
 				AF9411192018286B001F7212 /* GlobalConfig.swift in Sources */,
 				AFE4546020160499004AA8FD /* MainViewController.swift in Sources */,
