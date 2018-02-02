@@ -25,13 +25,13 @@ class AddCustomerViewController: UIViewController {
         
         let titleLabel = UILabel.init(frame: CGRect.init(x: CGFloat(0), y: 10, width: width, height: 44))
         titleLabel.textAlignment = NSTextAlignment.center
-        titleLabel.text = "Select Customer"
+        titleLabel.text = "Customer Details"
         titleLabel.font = UIFont.systemFont(ofSize: CGFloat(20), weight: UIFont.Weight(rawValue: 2))
         titleLabel.textColor = UIColor.white
         view.addSubview(titleLabel)
         
         closeButton = self.initNavButtonWithFrame(CGRect.init(x: CGFloat(10), y: CGFloat(10), width: CGFloat(100), height: CGFloat(44)), title: "Close", backgroundColor: UIColor.RGBA(r: Float(245), g: Float(116), b: Float(77), a: 1))
-        closeButton?.addTarget(self, action: #selector(self.dismissVC), for: UIControlEvents.touchUpInside)
+        closeButton?.addTarget(self, action: #selector(self.closeVC), for: UIControlEvents.touchUpInside)
         self.view.addSubview(closeButton!)
         
         saveButton = self.initNavButtonWithFrame(CGRect.init(x: CGFloat(width - 110), y: CGFloat(10), width: 100, height: 44), title: "+ New", backgroundColor: UIColor.RGBA(r:Float(123) , g: Float(194), b: Float(85), a: 1))
@@ -102,9 +102,9 @@ class AddCustomerViewController: UIViewController {
         self.view.endEditing(true)
         self.dismiss(animated: true, completion: nil)
     }
-    @objc func dismissVC() -> Void {
+    @objc func closeVC() -> Void {
         self.view.endEditing(true)
-        self.dismiss(animated: true, completion: nil)
+        self.navigationController?.popViewController(animated: true)
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

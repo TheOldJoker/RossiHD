@@ -9,11 +9,10 @@
 import UIKit
 
 class RootTabBarViewController: UITabBarController {
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tabBar.isHidden = true;
-        // Do any additional setup after loading the view.
+        self.view.layer.contents = UIImage.init(named: "home_backgroud")?.cgImage
+        self.view.contentMode = .scaleAspectFill
     }
 
     override func didReceiveMemoryWarning() {

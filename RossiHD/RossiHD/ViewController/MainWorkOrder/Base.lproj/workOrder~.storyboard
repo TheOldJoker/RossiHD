@@ -14,7 +14,7 @@
         <scene sceneID="j8j-Bm-x2R">
             <objects>
                 <tabBarController id="dC1-SV-570" customClass="RootTabBarViewController" customModule="RossiHD" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="B6B-mZ-pud">
+                    <tabBar key="tabBar" hidden="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="B6B-mZ-pud">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>

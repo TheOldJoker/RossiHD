@@ -11,6 +11,7 @@
 		AF62AB2D2016C46100FF8857 /* MainUserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF62AB2C2016C46100FF8857 /* MainUserInfoView.swift */; };
 		AF62AB2F2016CAD800FF8857 /* MainOderSetsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF62AB2E2016CAD800FF8857 /* MainOderSetsTableViewCell.swift */; };
 		AF82413920230ADE00C6F92E /* RootTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF82413820230ADE00C6F92E /* RootTabBarViewController.swift */; };
+		AF82413C20230F3000C6F92E /* workOrder.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF82413A20230F3000C6F92E /* workOrder.storyboard */; };
 		AF94111420182782001F7212 /* YHAnimationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AF94110D20182782001F7212 /* YHAnimationManager.m */; };
 		AF94111520182782001F7212 /* YHCAAimationModalTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = AF94110F20182782001F7212 /* YHCAAimationModalTransition.m */; };
 		AF94111620182782001F7212 /* YHModaAnimationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AF94111120182782001F7212 /* YHModaAnimationManager.m */; };
@@ -60,6 +61,7 @@
 		AF62AB2C2016C46100FF8857 /* MainUserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainUserInfoView.swift; sourceTree = "<group>"; };
 		AF62AB2E2016CAD800FF8857 /* MainOderSetsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainOderSetsTableViewCell.swift; sourceTree = "<group>"; };
 		AF82413820230ADE00C6F92E /* RootTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarViewController.swift; sourceTree = "<group>"; };
+		AF82413B20230F3000C6F92E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = RossiHD/ViewController/Main/Base.lproj/workOrder.storyboard; sourceTree = "<group>"; };
 		AF94110C20182782001F7212 /* YHAnimationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHAnimationManager.h; sourceTree = "<group>"; };
 		AF94110D20182782001F7212 /* YHAnimationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHAnimationManager.m; sourceTree = "<group>"; };
 		AF94110E20182782001F7212 /* YHCAAimationModalTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHCAAimationModalTransition.h; sourceTree = "<group>"; };
@@ -127,9 +129,17 @@
 		AF82413720230AA600C6F92E /* RootTabBar */ = {
 			isa = PBXGroup;
 			children = (
+				AFE4542D2016039B004AA8FD /* Main.storyboard */,
 				AF82413820230ADE00C6F92E /* RootTabBarViewController.swift */,
 			);
 			path = RootTabBar;
+			sourceTree = "<group>";
+		};
+		AF82413D202310E900C6F92E /* POS */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = POS;
 			sourceTree = "<group>";
 		};
 		AF94110B20182782001F7212 /* YHModaTransitonHelper */ = {
@@ -225,25 +235,26 @@
 		AFE45461201604AC004AA8FD /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				AF82413D202310E900C6F92E /* POS */,
 				AF82413720230AA600C6F92E /* RootTabBar */,
 				AF94111A20182A23001F7212 /* ModalList */,
 				AFE45463201604C3004AA8FD /* Login */,
-				AFE45462201604B8004AA8FD /* Main */,
+				AFE45462201604B8004AA8FD /* MainWorkOrder */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
 		};
-		AFE45462201604B8004AA8FD /* Main */ = {
+		AFE45462201604B8004AA8FD /* MainWorkOrder */ = {
 			isa = PBXGroup;
 			children = (
+				AF82413A20230F3000C6F92E /* workOrder.storyboard */,
 				AFE454742016161B004AA8FD /* MainCustomerCardTableViewCell.swift */,
 				AF62AB2E2016CAD800FF8857 /* MainOderSetsTableViewCell.swift */,
 				AF62AB2C2016C46100FF8857 /* MainUserInfoView.swift */,
 				AFE4545F20160499004AA8FD /* MainViewController.swift */,
 				AF62AB2A2016C3EB00FF8857 /* OderSetsViewController.swift */,
-				AFE4542D2016039B004AA8FD /* Main.storyboard */,
 			);
-			path = Main;
+			path = MainWorkOrder;
 			sourceTree = "<group>";
 		};
 		AFE45463201604C3004AA8FD /* Login */ = {
@@ -384,6 +395,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFE454732016051B004AA8FD /* login.storyboard in Resources */,
+				AF82413C20230F3000C6F92E /* workOrder.storyboard in Resources */,
 				AFE454342016039B004AA8FD /* LaunchScreen.storyboard in Resources */,
 				AFE454312016039B004AA8FD /* Assets.xcassets in Resources */,
 				AFE4542F2016039B004AA8FD /* Main.storyboard in Resources */,
@@ -469,6 +481,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		AF82413A20230F3000C6F92E /* workOrder.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF82413B20230F3000C6F92E /* Base */,
+			);
+			name = workOrder.storyboard;
+			sourceTree = "<group>";
+		};
 		AFE4542D2016039B004AA8FD /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

@@ -14,11 +14,12 @@ class CustomerSelectListViewController: UIViewController {
     var addNewButton : UIButton?
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
         self.view.backgroundColor = UIColor.black
         let width = SCREEN_WIDTH / 2
         let height = SCREEN_HEIGHT - 100
-        self.view.frame = CGRect.init(x: CGFloat((SCREEN_WIDTH - width) / 2), y: CGFloat((SCREEN_HEIGHT - height) / 2), width: width, height: height)
-        
+        self.fixNavgationControllerScreenWithSize(CGSize.init(width: width, height: height))
+        self.view.frame = CGRect.init(x: 0, y: 0, width: width, height: height)
         let titleLabel = UILabel.init(frame: CGRect.init(x: CGFloat(0), y: 10, width: width, height: 44))
         titleLabel.textAlignment = NSTextAlignment.center
         titleLabel.text = "Select Customer"
@@ -53,11 +54,8 @@ class CustomerSelectListViewController: UIViewController {
     }
     //MARK: - Aciton
     @objc func addNewCustomer() -> Void{
-        let nav = self.presentingViewController!
-        self.dismiss(animated: true) {
-            let mainVC = nav.childViewControllers.first as! MainViewController
-            mainVC.showAddCustomer()
-        }
+        let vc = AddCustomerViewController.init()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     @objc func dismissVC() -> Void {
         self.dismiss(animated: true, completion: nil)
