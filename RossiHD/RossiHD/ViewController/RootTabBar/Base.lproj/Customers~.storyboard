@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,7 +23,6 @@
                         <segue destination="NsO-rX-jDd" kind="relationship" relationship="viewControllers" id="Tcf-LC-Wl5"/>
                         <segue destination="vct-Hq-xsU" kind="relationship" relationship="viewControllers" id="rSD-qH-bfU"/>
                         <segue destination="iJd-5f-42S" kind="relationship" relationship="viewControllers" id="e8I-yd-epu"/>
-                        <segue destination="FDc-WW-X4L" kind="relationship" relationship="viewControllers" id="NKk-qn-i80"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HNq-t8-yg2" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -59,15 +59,37 @@
             </objects>
             <point key="canvasLocation" x="-759" y="88"/>
         </scene>
-        <!--Customers-->
-        <scene sceneID="rlE-OO-lsD">
+        <!--Navigation Controller-->
+        <scene sceneID="JgP-AC-aok">
             <objects>
-                <viewControllerPlaceholder storyboardName="Customers" id="FDc-WW-X4L" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="pOQ-2N-EhG"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ytt-xb-4Rs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController id="nG5-8r-nuZ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="atF-fh-nd6">
+                        <rect key="frame" x="0.0" y="20" width="1112" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Q9Z-B1-eiz" kind="relationship" relationship="rootViewController" id="Vb2-Ro-wJx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yt5-Xk-5G1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-757" y="256"/>
+            <point key="canvasLocation" x="-404" y="445"/>
+        </scene>
+        <!--Customers View Controller-->
+        <scene sceneID="GVK-eU-vZX">
+            <objects>
+                <viewController id="Q9Z-B1-eiz" customClass="CustomersViewController" customModule="RossiHD" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LCa-4u-lq3">
+                        <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="YQk-jI-CoA"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xQ4-0w-27E"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="maO-ha-MkR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="264" y="445"/>
         </scene>
     </scenes>
 </document>

@@ -14,28 +14,17 @@ class CustomerSelectListViewController: UIViewController {
     var addNewButton : UIButton?
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.setNavigationBarHidden(true, animated: false)
-        self.view.backgroundColor = UIColor.black
+        self.title = "Select Customer"
         let width = SCREEN_WIDTH / 2
         let height = SCREEN_HEIGHT - 100
+        self.navBarBackgroundColor(UIColor.black, titleColor: UIColor.white)
         self.fixNavgationControllerScreenWithSize(CGSize.init(width: width, height: height))
-        self.view.frame = CGRect.init(x: 0, y: 0, width: width, height: height)
-        let titleLabel = UILabel.init(frame: CGRect.init(x: CGFloat(0), y: 10, width: width, height: 44))
-        titleLabel.textAlignment = NSTextAlignment.center
-        titleLabel.text = "Select Customer"
-        titleLabel.font = UIFont.systemFont(ofSize: CGFloat(20), weight: UIFont.Weight(rawValue: 2))
-        titleLabel.textColor = UIColor.white
-        view.addSubview(titleLabel)
         
-        closeButton = self.initNavButtonWithFrame(CGRect.init(x: CGFloat(10), y: CGFloat(10), width: CGFloat(100), height: CGFloat(44)), title: "Close", backgroundColor: UIColor.RGBA(r: Float(245), g: Float(116), b: Float(77), a: 1))
-        closeButton?.addTarget(self, action: #selector(self.dismissVC), for: UIControlEvents.touchUpInside)
-        self.view.addSubview(closeButton!)
         
-        addNewButton = self.initNavButtonWithFrame(CGRect.init(x: CGFloat(width - 110), y: CGFloat(10), width: 100, height: 44), title: "+ New", backgroundColor: UIColor.RGBA(r:Float(123) , g: Float(194), b: Float(85), a: 1))
-        addNewButton?.addTarget(self, action: #selector(self.addNewCustomer), for: UIControlEvents.touchUpInside)
-        view.addSubview(addNewButton!)
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem.initCloseButtonWtihTarget(self, action: #selector(dismissVC))
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem.initRightButtonWtihTitle("+ New", backgroundColor: UIColor.RGBA(r:Float(123) , g: Float(194), b: Float(85), a: 1), target: self, action: #selector(addNewCustomer))
         
-        mainTable = UITableView.init(frame: CGRect.init(x: CGFloat(0), y: CGFloat(64), width: width, height: height - 64), style: UITableViewStyle.plain)
+        mainTable = UITableView.init(frame: CGRect.init(x: CGFloat(0), y: CGFloat(0), width: width, height: height), style: UITableViewStyle.plain)
 //        mainTable?.separatorStyle = UITableViewCellSeparatorStyle.none
         mainTable?.showsVerticalScrollIndicator = false
         mainTable?.showsHorizontalScrollIndicator = false
@@ -91,5 +80,7 @@ extension CustomerSelectListViewController : UITableViewDataSource{
     }
 }
 extension CustomerSelectListViewController : UITableViewDelegate{
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("\(indexPath.row)")
+    }
 }

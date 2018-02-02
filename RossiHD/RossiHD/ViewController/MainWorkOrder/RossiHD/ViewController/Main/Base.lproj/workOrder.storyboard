@@ -15,7 +15,7 @@
             <objects>
                 <navigationController id="4Bw-Qh-6Pr" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="qGh-He-GOv"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vr7-RF-Xxx">
+                    <navigationBar key="navigationBar" hidden="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vr7-RF-Xxx">
                         <rect key="frame" x="0.0" y="20" width="1112" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

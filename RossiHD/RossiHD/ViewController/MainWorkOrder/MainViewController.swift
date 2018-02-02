@@ -12,7 +12,6 @@ class MainViewController: UIViewController {
     @IBOutlet var mainTableView: UITableView!
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.navigationController?.setNavigationBarHidden(true, animated: animated)
     }
     // MARK: - Action
     

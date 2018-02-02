@@ -12,6 +12,13 @@
 		AF62AB2F2016CAD800FF8857 /* MainOderSetsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF62AB2E2016CAD800FF8857 /* MainOderSetsTableViewCell.swift */; };
 		AF82413920230ADE00C6F92E /* RootTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF82413820230ADE00C6F92E /* RootTabBarViewController.swift */; };
 		AF82413C20230F3000C6F92E /* workOrder.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF82413A20230F3000C6F92E /* workOrder.storyboard */; };
+		AF82413F2024387800C6F92E /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF82413E2024387800C6F92E /* UIBarButtonItem+Extension.swift */; };
+		AF8241412024406B00C6F92E /* POSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8241402024406B00C6F92E /* POSViewController.swift */; };
+		AF8241462024412B00C6F92E /* InventoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8241452024412B00C6F92E /* InventoryViewController.swift */; };
+		AF8241482024413700C6F92E /* CustomersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8241472024413700C6F92E /* CustomersViewController.swift */; };
+		AF82414B2024431900C6F92E /* POS.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF8241492024431900C6F92E /* POS.storyboard */; };
+		AF82414D2024437F00C6F92E /* Inventory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF82414C2024437F00C6F92E /* Inventory.storyboard */; };
+		AF824150202443CC00C6F92E /* Customers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF82414E202443CC00C6F92E /* Customers.storyboard */; };
 		AF94111420182782001F7212 /* YHAnimationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AF94110D20182782001F7212 /* YHAnimationManager.m */; };
 		AF94111520182782001F7212 /* YHCAAimationModalTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = AF94110F20182782001F7212 /* YHCAAimationModalTransition.m */; };
 		AF94111620182782001F7212 /* YHModaAnimationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AF94111120182782001F7212 /* YHModaAnimationManager.m */; };
@@ -62,6 +69,13 @@
 		AF62AB2E2016CAD800FF8857 /* MainOderSetsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainOderSetsTableViewCell.swift; sourceTree = "<group>"; };
 		AF82413820230ADE00C6F92E /* RootTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarViewController.swift; sourceTree = "<group>"; };
 		AF82413B20230F3000C6F92E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = RossiHD/ViewController/Main/Base.lproj/workOrder.storyboard; sourceTree = "<group>"; };
+		AF82413E2024387800C6F92E /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
+		AF8241402024406B00C6F92E /* POSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POSViewController.swift; sourceTree = "<group>"; };
+		AF8241452024412B00C6F92E /* InventoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryViewController.swift; sourceTree = "<group>"; };
+		AF8241472024413700C6F92E /* CustomersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomersViewController.swift; sourceTree = "<group>"; };
+		AF82414A2024431900C6F92E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = RossiHD/ViewController/RootTabBar/Base.lproj/POS.storyboard; sourceTree = "<group>"; };
+		AF82414C2024437F00C6F92E /* Inventory.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Inventory.storyboard; sourceTree = "<group>"; };
+		AF82414F202443CC00C6F92E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = RossiHD/ViewController/RootTabBar/Base.lproj/Customers.storyboard; sourceTree = "<group>"; };
 		AF94110C20182782001F7212 /* YHAnimationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHAnimationManager.h; sourceTree = "<group>"; };
 		AF94110D20182782001F7212 /* YHAnimationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHAnimationManager.m; sourceTree = "<group>"; };
 		AF94110E20182782001F7212 /* YHCAAimationModalTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHCAAimationModalTransition.h; sourceTree = "<group>"; };
@@ -138,8 +152,28 @@
 		AF82413D202310E900C6F92E /* POS */ = {
 			isa = PBXGroup;
 			children = (
+				AF8241492024431900C6F92E /* POS.storyboard */,
+				AF8241402024406B00C6F92E /* POSViewController.swift */,
 			);
 			path = POS;
+			sourceTree = "<group>";
+		};
+		AF8241422024406E00C6F92E /* Inventory */ = {
+			isa = PBXGroup;
+			children = (
+				AF82414C2024437F00C6F92E /* Inventory.storyboard */,
+				AF8241452024412B00C6F92E /* InventoryViewController.swift */,
+			);
+			path = Inventory;
+			sourceTree = "<group>";
+		};
+		AF8241432024410A00C6F92E /* Customers */ = {
+			isa = PBXGroup;
+			children = (
+				AF82414E202443CC00C6F92E /* Customers.storyboard */,
+				AF8241472024413700C6F92E /* CustomersViewController.swift */,
+			);
+			path = Customers;
 			sourceTree = "<group>";
 		};
 		AF94110B20182782001F7212 /* YHModaTransitonHelper */ = {
@@ -235,11 +269,13 @@
 		AFE45461201604AC004AA8FD /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				AFE45462201604B8004AA8FD /* MainWorkOrder */,
 				AF82413D202310E900C6F92E /* POS */,
+				AF8241422024406E00C6F92E /* Inventory */,
+				AF8241432024410A00C6F92E /* Customers */,
 				AF82413720230AA600C6F92E /* RootTabBar */,
 				AF94111A20182A23001F7212 /* ModalList */,
 				AFE45463201604C3004AA8FD /* Login */,
-				AFE45462201604B8004AA8FD /* MainWorkOrder */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -273,6 +309,7 @@
 				AFE45466201604F4004AA8FD /* ViewController+Extension.swift */,
 				AFE45467201604F4004AA8FD /* button+Extension.swift */,
 				AFE45465201604F4004AA8FD /* UIColor+Extension.swift */,
+				AF82413E2024387800C6F92E /* UIBarButtonItem+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -394,11 +431,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF824150202443CC00C6F92E /* Customers.storyboard in Resources */,
 				AFE454732016051B004AA8FD /* login.storyboard in Resources */,
 				AF82413C20230F3000C6F92E /* workOrder.storyboard in Resources */,
 				AFE454342016039B004AA8FD /* LaunchScreen.storyboard in Resources */,
 				AFE454312016039B004AA8FD /* Assets.xcassets in Resources */,
+				AF82414D2024437F00C6F92E /* Inventory.storyboard in Resources */,
 				AFE4542F2016039B004AA8FD /* Main.storyboard in Resources */,
+				AF82414B2024431900C6F92E /* POS.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +465,7 @@
 			files = (
 				AF94111620182782001F7212 /* YHModaAnimationManager.m in Sources */,
 				AFE454722016051B004AA8FD /* LoginViewController.swift in Sources */,
+				AF8241482024413700C6F92E /* CustomersViewController.swift in Sources */,
 				AF82413920230ADE00C6F92E /* RootTabBarViewController.swift in Sources */,
 				AFC6F2D4201ECA600050E6B4 /* LoginSelectViewController.swift in Sources */,
 				AF9411192018286B001F7212 /* GlobalConfig.swift in Sources */,
@@ -437,8 +478,11 @@
 				AFE4542A2016039B004AA8FD /* AppDelegate.swift in Sources */,
 				AF94111C20182A73001F7212 /* CustomerSelectListViewController.swift in Sources */,
 				AF94111420182782001F7212 /* YHAnimationManager.m in Sources */,
+				AF8241412024406B00C6F92E /* POSViewController.swift in Sources */,
 				AFE4546E2016050D004AA8FD /* LoginSelectButton.swift in Sources */,
 				AFE45469201604F4004AA8FD /* ViewController+Extension.swift in Sources */,
+				AF8241462024412B00C6F92E /* InventoryViewController.swift in Sources */,
+				AF82413F2024387800C6F92E /* UIBarButtonItem+Extension.swift in Sources */,
 				AF62AB2D2016C46100FF8857 /* MainUserInfoView.swift in Sources */,
 				AF94112220186385001F7212 /* AddCustomerViewController.swift in Sources */,
 				AF94112020185DF3001F7212 /* YHGlobalFunc.swift in Sources */,
@@ -487,6 +531,22 @@
 				AF82413B20230F3000C6F92E /* Base */,
 			);
 			name = workOrder.storyboard;
+			sourceTree = "<group>";
+		};
+		AF8241492024431900C6F92E /* POS.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF82414A2024431900C6F92E /* Base */,
+			);
+			name = POS.storyboard;
+			sourceTree = "<group>";
+		};
+		AF82414E202443CC00C6F92E /* Customers.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF82414F202443CC00C6F92E /* Base */,
+			);
+			name = Customers.storyboard;
 			sourceTree = "<group>";
 		};
 		AFE4542D2016039B004AA8FD /* Main.storyboard */ = {
