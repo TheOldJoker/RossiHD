@@ -81,6 +81,7 @@ extension CustomerSelectListViewController : UITableViewDataSource{
 }
 extension CustomerSelectListViewController : UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("\(indexPath.row)")
+        let vc = CustomerTemplateCategoriesTableViewController.init()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
