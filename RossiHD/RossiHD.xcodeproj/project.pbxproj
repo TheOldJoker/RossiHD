@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF1CA51720294A51001F5D82 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1CA51620294A51001F5D82 /* String+Extension.swift */; };
+		AF1CA51A20294B4D001F5D82 /* ServerDataWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1CA51920294B4D001F5D82 /* ServerDataWork.swift */; };
 		AF62AB2B2016C3EB00FF8857 /* OderSetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF62AB2A2016C3EB00FF8857 /* OderSetsViewController.swift */; };
 		AF62AB2D2016C46100FF8857 /* MainUserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF62AB2C2016C46100FF8857 /* MainUserInfoView.swift */; };
 		AF62AB2F2016CAD800FF8857 /* MainOderSetsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF62AB2E2016CAD800FF8857 /* MainOderSetsTableViewCell.swift */; };
@@ -49,6 +51,7 @@
 		AFE454722016051B004AA8FD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE454702016051A004AA8FD /* LoginViewController.swift */; };
 		AFE454732016051B004AA8FD /* login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFE454712016051B004AA8FD /* login.storyboard */; };
 		AFE454752016161B004AA8FD /* MainCustomerCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE454742016161B004AA8FD /* MainCustomerCardTableViewCell.swift */; };
+		FDBF28FFFC9DA2684425E8F1 /* Pods_RossiHD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3197019FF284338C0D607E8 /* Pods_RossiHD.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +72,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0CF460846541106DE23A1FA8 /* Pods-RossiHD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RossiHD.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RossiHD/Pods-RossiHD.debug.xcconfig"; sourceTree = "<group>"; };
+		25A37F1436A7AB963E6EB97D /* Pods-RossiHD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RossiHD.release.xcconfig"; path = "Pods/Target Support Files/Pods-RossiHD/Pods-RossiHD.release.xcconfig"; sourceTree = "<group>"; };
+		AF1CA51620294A51001F5D82 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		AF1CA51920294B4D001F5D82 /* ServerDataWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerDataWork.swift; sourceTree = "<group>"; };
 		AF62AB2A2016C3EB00FF8857 /* OderSetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OderSetsViewController.swift; sourceTree = "<group>"; };
 		AF62AB2C2016C46100FF8857 /* MainUserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainUserInfoView.swift; sourceTree = "<group>"; };
 		AF62AB2E2016CAD800FF8857 /* MainOderSetsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainOderSetsTableViewCell.swift; sourceTree = "<group>"; };
@@ -123,6 +130,7 @@
 		AFE454702016051A004AA8FD /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		AFE454712016051B004AA8FD /* login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = login.storyboard; sourceTree = "<group>"; };
 		AFE454742016161B004AA8FD /* MainCustomerCardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCustomerCardTableViewCell.swift; sourceTree = "<group>"; };
+		D3197019FF284338C0D607E8 /* Pods_RossiHD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RossiHD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +138,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDBF28FFFC9DA2684425E8F1 /* Pods_RossiHD.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +159,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		21B68AD74381DBCA454510FF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0CF460846541106DE23A1FA8 /* Pods-RossiHD.debug.xcconfig */,
+				25A37F1436A7AB963E6EB97D /* Pods-RossiHD.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5CA70430C8A074226AE193B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D3197019FF284338C0D607E8 /* Pods_RossiHD.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AF1CA51820294B1A001F5D82 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				AF1CA51920294B4D001F5D82 /* ServerDataWork.swift */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
 		AF82413720230AA600C6F92E /* RootTabBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -229,6 +263,8 @@
 				AFE4543D2016039B004AA8FD /* RossiHDTests */,
 				AFE454482016039B004AA8FD /* RossiHDUITests */,
 				AFE454272016039B004AA8FD /* Products */,
+				21B68AD74381DBCA454510FF /* Pods */,
+				5CA70430C8A074226AE193B8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -245,6 +281,7 @@
 		AFE454282016039B004AA8FD /* RossiHD */ = {
 			isa = PBXGroup;
 			children = (
+				AF1CA51820294B1A001F5D82 /* Class */,
 				AFE45464201604E2004AA8FD /* Extension */,
 				AFE4546B201604FA004AA8FD /* View */,
 				AFE45461201604AC004AA8FD /* ViewController */,
@@ -329,6 +366,7 @@
 		AFE45464201604E2004AA8FD /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				AF1CA51620294A51001F5D82 /* String+Extension.swift */,
 				AFE45466201604F4004AA8FD /* ViewController+Extension.swift */,
 				AFE45467201604F4004AA8FD /* button+Extension.swift */,
 				AFE45465201604F4004AA8FD /* UIColor+Extension.swift */,
@@ -353,9 +391,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AFE4544E2016039B004AA8FD /* Build configuration list for PBXNativeTarget "RossiHD" */;
 			buildPhases = (
+				FADB6839604DFF9F1D9DC31C /* [CP] Check Pods Manifest.lock */,
 				AFE454222016039B004AA8FD /* Sources */,
 				AFE454232016039B004AA8FD /* Frameworks */,
 				AFE454242016039B004AA8FD /* Resources */,
+				65CFFF6F3483E86F5099D7FF /* [CP] Embed Pods Frameworks */,
+				F53A4B4F2858DE032A8DB609 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -482,6 +523,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		65CFFF6F3483E86F5099D7FF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RossiHD/Pods-RossiHD-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F53A4B4F2858DE032A8DB609 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RossiHD/Pods-RossiHD-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FADB6839604DFF9F1D9DC31C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AFE454222016039B004AA8FD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -503,9 +592,11 @@
 				AFE454752016161B004AA8FD /* MainCustomerCardTableViewCell.swift in Sources */,
 				AF62AB2F2016CAD800FF8857 /* MainOderSetsTableViewCell.swift in Sources */,
 				AF94111520182782001F7212 /* YHCAAimationModalTransition.m in Sources */,
+				AF1CA51720294A51001F5D82 /* String+Extension.swift in Sources */,
 				AFE4542A2016039B004AA8FD /* AppDelegate.swift in Sources */,
 				AF94111C20182A73001F7212 /* CustomerSelectListViewController.swift in Sources */,
 				AF94111420182782001F7212 /* YHAnimationManager.m in Sources */,
+				AF1CA51A20294B4D001F5D82 /* ServerDataWork.swift in Sources */,
 				AF8241412024406B00C6F92E /* POSViewController.swift in Sources */,
 				AFE4546E2016050D004AA8FD /* LoginSelectButton.swift in Sources */,
 				AFE45469201604F4004AA8FD /* ViewController+Extension.swift in Sources */,
@@ -713,6 +804,7 @@
 		};
 		AFE4544F2016039B004AA8FD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CF460846541106DE23A1FA8 /* Pods-RossiHD.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -732,6 +824,7 @@
 		};
 		AFE454502016039B004AA8FD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25A37F1436A7AB963E6EB97D /* Pods-RossiHD.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

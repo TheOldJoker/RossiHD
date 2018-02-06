@@ -49,10 +49,21 @@ class LoginViewController: UIViewController {
     @IBAction func loginApp(_ sender: UIButton) {
         sender.setButtonCanClicked(can: false)
         view.endEditing(true)
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-            self.dismiss(animated: true, completion: {
-                
-            })
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+//            self.dismiss(animated: true, completion: {
+//
+//            })
+//        }
+        if usernameTextField.text?.length() == 0 {
+            return
+        }
+        if passwordTextField.text?.length() == 0 {
+            return
+        }
+        loginRossiWithUsername(usernameTextField.text!, password: passwordTextField.text!, storeId: "1", successCallback: { (json) in
+            YHLog(message: json)
+        }) { (error) in
+            YHLog(message: error)
         }
     }
     @IBAction func LoginSelectButtonClicked(_ sender: LoginSelectButton) {

@@ -1,0 +1,6 @@
+framework module Pods_RossiHD {
+  umbrella header "Pods-RossiHD-umbrella.h"
+
+  export *
+  module * { export * }
+}
